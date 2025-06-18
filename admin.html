@@ -88,6 +88,12 @@
 
 <script src="components.js"></script>
 <script>
+ const password = prompt("Enter admin password:");
+  if (password !== "74Rohit58....") {
+    alert("Access denied");
+    window.location.href = "/";
+  }
+  
   // Get the current timestamp in ISO format
   function getNowISO() {
     return new Date().toISOString();
